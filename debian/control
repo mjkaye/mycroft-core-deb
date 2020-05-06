@@ -1,0 +1,28 @@
+Source: mycroft-core
+Section: python
+Priority: extra
+Maintainer: Michael J Kaye <mjkaye@cuttingfree.info>
+Build-Depends: debhelper-compat (= 12),
+	       dh-python,
+	       python3-all (>= 3.7),
+	       python3-setuptools,
+	       python3-all-dev (>= 3.7),
+	       libfann-dev,
+	       swig,
+	       portaudio19-dev,
+	       libasound2-dev,
+	       libfreetype6-dev,
+	       libjpeg-dev,
+	       zlib1g-dev,
+	       liblcms2-dev,
+	       libtiff-dev,
+	       libwebp-dev,
+	       libraqm-dev,
+	       libimagequant-dev
+Standards-Version: 4.4.0
+Homepage: https://mycroft.ai
+
+Package: python3-mycroft-core
+Architecture: any
+Depends: ${misc:Depends}, ${python3:Depends}, ${python3:Depends}
+Description: Mycroft AI is the wold's first Free and Open Source voice assistant.
