@@ -4,6 +4,7 @@ Priority: extra
 Maintainer: Michael J Kaye <mjkaye@cuttingfree.info>
 Build-Depends: debhelper-compat (= 11),
 	       dh-python,
+	       dh-virtualenv (>=1.0),
 	       python3-all (>= 3.7),
 	       python3-setuptools,
 	       python3-all-dev (>= 3.7),
@@ -24,5 +25,6 @@ Homepage: https://mycroft.ai
 
 Package: python3-mycroft-core
 Architecture: any
+Pre-Depends: dpkg (>= 1.16.1), python3 (>= 3.7), ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${python3:Depends}, ${shlib:Depends}
 Description: Mycroft AI is the wold's first Free and Open Source voice assistant.
