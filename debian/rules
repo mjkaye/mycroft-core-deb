@@ -3,7 +3,7 @@
 export PYBUILD_NAME=mycroft-core
 
 %:
-	dh $@ --with python-virtualenv --python /usr/bin/python3 --buildsystem=pybuild
+	dh $@ --with python-virtualenv --python /usr/bin/python3
 
 .PHONY: override_dh_strip override_dh_shlibdeps
 
