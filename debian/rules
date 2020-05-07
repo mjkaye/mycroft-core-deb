@@ -1,14 +1,17 @@
 #!/usr/bin/make -f
 
-export PYBUILD_NAME=mycroft-core
+# export PYBUILD_NAME=mycroft-core
+export DH_VERBOSE=1
+
+DH_VENV_ARGS='-v  --upgrade-pip --extra-pip-arg "--no-cache-dir" --python /usr/bin/python3 --package python3-mycroft-core'
 
 %:
 	dh $@ --with python-virtualenv --python /usr/bin/python3
 
-.PHONY: override_dh_strip override_dh_shlibdeps
+.PHONY: override_dh_virtualenv override_dh_strip override_dh_shlibdeps
 
-# override_dh_virtualenv:
-# 	dh_virtualenv $(DH_VENV_ARGS)
+override_dh_virtualenv:
+	dh_virtualenv $(DH_VENV_ARGS)
 
 override_dh_strip:
 	dh_strip --exclude=cffi --exclude=_imaging --exclude=PIL --exclude="flac-"
