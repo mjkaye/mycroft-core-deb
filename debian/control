@@ -2,7 +2,7 @@ Source: mycroft-core
 Section: python
 Priority: extra
 Maintainer: Michael J Kaye <mjkaye@cuttingfree.info>
-Build-Depends: debhelper-compat (= 12),
+Build-Depends: debhelper-compat (= 11),
 	       dh-python,
 	       python3-all (>= 3.7),
 	       python3-setuptools,
