@@ -1,3 +1,9 @@
+mycroft-core (20.2.3-1) buster; urgency=medium
+
+  * Release 20.2.3.
+
+ -- Michael J Kaye <mjkaye@cuttingfree.info>  Fri, 08 May 2020 23:53:25 +0100
+
 mycroft-core (20.2.2-1) buster; urgency=low
 
   * Release 20.2.2.
