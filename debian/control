@@ -23,7 +23,7 @@ Build-Depends: debhelper-compat (= 11),
 Standards-Version: 4.4.0
 Homepage: https://mycroft.ai
 
-Package: python3-mycroft-core
+Package: mycroft-core
 Architecture: any
 Pre-Depends: dpkg (>= 1.16.1), python3 (>= 3.7), ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${python3:Depends}, ${shlib:Depends}
