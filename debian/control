@@ -26,5 +26,5 @@ Homepage: https://mycroft.ai
 Package: mycroft-core
 Architecture: any
 Pre-Depends: dpkg (>= 1.16.1), python3 (>= 3.7), ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${python3:Depends}, ${shlib:Depends}
+Depends: python3-setuptools, ${misc:Depends}, ${python3:Depends}, ${shlib:Depends}
 Description: Mycroft AI is the wold's first Free and Open Source voice assistant.
