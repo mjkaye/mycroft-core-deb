@@ -3,7 +3,7 @@
 # export PYBUILD_NAME=mycroft-core
 export DH_VERBOSE=1
 
-DH_VENV_ARGS=--verbose --upgrade-pip --extra-pip-arg "--no-cache-dir" --python /usr/bin/python3
+DH_VENV_ARGS=--upgrade-pip --extra-pip-arg "--no-cache-dir" --use-system-packages --python /usr/bin/python3
 
 %:
 	dh $@ --with python-virtualenv --python /usr/bin/python3
